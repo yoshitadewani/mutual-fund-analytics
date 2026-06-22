@@ -1,17 +1,28 @@
 import requests
 import pandas as pd
 
-url = "https://api.mfapi.in/mf/125497"
+funds = {
+    "sbi_bluechip": "119551",
+    "icici_bluechip": "120503",
+    "nippon_large_cap": "118632",
+    "axis_bluechip": "119092",
+    "kotak_bluechip": "120841"
+}
 
-response = requests.get(url)
+for fund_name, amfi_code in funds.items():
+    url = f"https://api.mfapi.in/mf/{amfi_code}"
 
-data = response.json()
+    response = requests.get(url)
 
-print(data)
+    if response.status_code == 200:
+        data = response.json()
 
-pd.DataFrame(data["data"]).to_csv(
-    "data/raw/hdfc_top100_nav.csv",
-    index=False
-)
+        nav_df = pd.DataFrame(data["data"])
 
-print("NAV data saved successfully!")
+        file_path = f"data/raw/{fund_name}_nav.csv"
+        nav_df.to_csv(file_path, index=False)
+
+        print(f"Saved: {file_path}")
+
+    else:
+        print(f"Failed for {fund_name}")
