@@ -90,38 +90,86 @@ Created:
 * Data quality summary
 
 ---
+## Day 3: Exploratory Data Analysis (EDA)
 
+### Data Analysis
+
+Performed exploratory analysis on the processed mutual fund datasets.
+
+Activities included:
+
+- Created analytical visualizations
+- Analyzed time-series trends
+- Performed category-wise analysis
+- Explored investor demographics
+- Conducted geographic analysis
+- Evaluated portfolio allocation
+- Generated correlation analysis
+- Documented analytical observations
+
+### Visualization Development
+
+Created multiple visualizations covering:
+
+- NAV trend analysis
+- AUM analysis
+- SIP trend analysis
+- Category distribution
+- Investor demographics
+- Geographic distribution
+- Folio growth
+- Correlation analysis
+- Sector allocation
+
+### Documentation
+
+Created:
+
+- EDA notebook
+- Visualization reports
+- Business insights summary
+
+### Deliverables
+
+- EDA analysis notebook
+- Visualization reports
+- Summary documentation
+- 
 ## Project Structure
 
 ```text
 mutual-fund-analytics/
-
+│
 ├── data/
-│   ├── raw/
-│   └── processed/
-
+│   ├── raw/                 # Raw source datasets
+│   └── processed/           # Cleaned datasets
+│
+├── notebooks/
+│   └── EDA_Analysis.ipynb   # Exploratory Data Analysis
+│
 ├── reports/
-│   ├── data_quality_summary.md
-│   └── data_dictionary.md
-
+│   ├── charts/              # Exported visualizations
+│   ├── data_dictionary.md
+│   └── data_quality_summary.md
+│
 ├── sql/
 │   ├── schema.sql
 │   └── queries.sql
-
+│
 ├── clean_data.py
-├── load_db.py
 ├── data_ingestion.py
 ├── amfi_validation.py
+├── load_db.py
 ├── fund_analysis.py
-
-├── bluestock_mf.db
+│
+├── bluestock_mf.db          # SQLite database
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
-
 ---
 
-## Current Status
+##Current Status
 
 ✅ Data Ingestion Complete
 
@@ -133,8 +181,9 @@ mutual-fund-analytics/
 
 ✅ SQL Analytics Completed
 
-✅ Documentation Completed
+✅ Exploratory Data Analysis Completed
 
+✅ Documentation Completed
 ---
 
 ## Key Outcomes
@@ -144,6 +193,9 @@ mutual-fund-analytics/
 * Created a centralized SQLite database
 * Enabled analytical reporting through SQL queries
 * Documented the complete workflow for reproducibility
+* Generated analytical visualizations for business reporting
+
+Produced documentation supporting exploratory data analysis
 
 ---
 
