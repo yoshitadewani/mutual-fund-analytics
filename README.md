@@ -219,32 +219,6 @@ mutual-fund-analytics/
 
 ---
 
-# Dashboard Preview
-
-## Page 1 – Industry Overview
-
-![Industry Overview](Page1_Industry_Overview.png)
-
----
-
-## Page 2 – Fund Performance
-
-![Fund Performance](Page2_Fund_Performance.png)
-
----
-
-## Page 3 – Investor Analytics
-
-![Investor Analytics](Page3_Investor_Analytics.png)
-
----
-
-## Page 4 – SIP & Market Trends
-
-![SIP & Market Trends](Page4_SIP_Market_Trends.png)
-
----
-
 # Current Status
 
 * ✅ Data Ingestion Completed
