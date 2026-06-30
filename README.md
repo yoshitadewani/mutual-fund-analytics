@@ -202,8 +202,9 @@ Built an interactive Power BI dashboard using the processed analytical dataset.
 
 ---
 
-# Project Structure
+## Project Structure
 
+```text
 Bluestock_MF_Dashboard/
 │
 ├── data/
@@ -228,14 +229,13 @@ Bluestock_MF_Dashboard/
 ├── amfi_validation.py
 ├── load_db.py
 ├── fund_analysis.py
-│
 ├── bluestock_mf.db
 ├── bluestock_mf_dashboard.pbix
 ├── Dashboard.pdf
 ├── requirements.txt
 ├── README.md
 └── .gitignore
----
+```
 ---
 
 # Current Status
