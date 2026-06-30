@@ -201,15 +201,25 @@ Built an interactive Power BI dashboard using the processed analytical dataset.
 * Dashboard Page Exports (PNG)
 
 ---
-
 ## Project Structure
 
 ```text
-Bluestock_MF_Dashboard/
+Mutual_Fund_Analytics/
+│
+├── Bluestock_MF_Dashboard/
+│   ├── bluestock_mf_dashboard.pbix        
+│   ├── Dashboard.pdf                      
+│   ├── Page1_Industry_Overview.png
+│   ├── Page2_Fund_Performance.png
+│   ├── Page3_Investor_Analytics.png
+│   └── Page4_SIP_Market_Trends.png
 │
 ├── data/
 │   ├── raw/
+│   │   └── (not included)
+│   │
 │   └── processed/
+│       └── (not included)
 │
 ├── notebooks/
 │   ├── EDA_Analysis.ipynb
@@ -224,17 +234,17 @@ Bluestock_MF_Dashboard/
 │   ├── schema.sql
 │   └── queries.sql
 │
+├── amfi_validation.py
 ├── clean_data.py
 ├── data_ingestion.py
-├── amfi_validation.py
-├── load_db.py
 ├── fund_analysis.py
+├── live_nav_fetch.py
+├── load_db.py
 ├── bluestock_mf.db
-├── bluestock_mf_dashboard.pbix
-├── Dashboard.pdf
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 ```
 ---
 
